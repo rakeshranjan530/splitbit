@@ -1,13 +1,109 @@
 body {
-  margin: 0;
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+/* --------------------Container--------------------- */
+
+.container{
+  width: 85%;
+  margin: auto;
+  margin-top: 60px;
+}
+/* ---------------card------------------ */
+.card{
+  border: 1px solid white;
+  width: 205px;
+  height: 88px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 10px 3px 0px;
+  cursor: pointer;
+}
+.cardimage{
+  display: flex;
+  align-items: center;
+}
+.carddetails{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-self: center;
+}
+.clientsidecard{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+}
+.mixservice{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  margin-top: 20px;
+}
+.serversidecard{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+}
+.cloudservicecard{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+}
+/* ----------footer------------ */
+.footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.activeCard{
+  border: 1px solid#15d44e;
+}
+
+/* -------------reactcalender-------- */
+.schedulecontainer{
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  grid-column-gap: 40px;  
+  margin-top: 35px;
+}
+
+
+.schedulecontainer .react-calendar button{
+  color: white;
+  background-color: #282c34;
+  border: none;
+  padding: 10px;
+}
+.react-calendar__month-view__weekdays__weekday{
+  text-align: center;
+}
+.react-calendar__month-view__weekdays__weekday abbr{
+  text-decoration: none;
+}
+
+.react-calendar__navigation{
+  display: block !important;
+  text-align: center !important;
+}
+.react-calendar__tile abbr{
+  cursor: pointer;
+}
+.react-calendar__tile--active abbr{
+    background: #2ECC71;
+    border-radius: 50%;
+    padding: 6px;
 }
