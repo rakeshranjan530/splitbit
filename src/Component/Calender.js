@@ -14,6 +14,9 @@ const CalendarComponent = (props) => {
         calendarData : JSON.parse(localStorage.getItem('calendar')) || []
     })
     useEffect(()=>{
+        if(!data){
+            history.push('/')
+        }
         const d = new Date();
         var year = d.getFullYear();
         var month = d.getMonth();
