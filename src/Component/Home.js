@@ -25,8 +25,8 @@ const Home =()=>{
         cardName = name;
         let priviousName = volatile?.priviousName;
         let isActiveCard = volatile?.isActiveCard;
+        debugger
         if(priviousName === name){
-            cardName='';
             isActiveCard = !isActiveCard
         }
         else{
@@ -121,8 +121,8 @@ const Home =()=>{
                         <img src={backwardarrow} alt="...loading" style={{width:"20px"}} />   
                         <span style={{fontWeight:"300",fontSize:"medium"}}>Our services</span>  
                     </div>
-                    <div title={(!volatile?.cardName && 'Please select skill') || ''} style={{display:"flex",justifyContent:"space-between",width:"201px",alignItems:"flex-end",cursor:'pointer'}}
-                        onClick={()=>{volatile?.cardName && history.push({data:volatile?.cardName,pathname:"/calendar"});}}
+                    <div title={(!volatile?.isActiveCard && 'Please select skill') || ''} style={{display:"flex",justifyContent:"space-between",width:"201px",alignItems:"flex-end",cursor:'pointer'}}
+                        onClick={()=>{volatile?.isActiveCard && history.push({data:volatile?.cardName,pathname:"/calendar"});}}
                     >
                         <span style={{fontWeight:"300",fontSize:"medium"}}>Expected Completion Time</span>
                         <img src={forwardarrow} alt="...loading" style={{width:"20px"}} />   
