@@ -1,8 +1,8 @@
 const getDiff = (d1,d2) => {
     const firstDate = d1 && new Date(d1);
     const secondDate = d1 && new Date(d2);
-    var t1 = firstDate.getTime();
-    var t2 = secondDate.getTime();
+    var t1 = firstDate.getTime();// long number 
+    var t2 = secondDate.getTime(); // long number
     let str='';
     let days = parseInt((t2-t1)/(24*3600*1000)); 
     let numberOfMonth =0;

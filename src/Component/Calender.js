@@ -16,6 +16,7 @@ const CalendarComponent = (props) => {
     useEffect(()=>{
         if(!data){
             history.push('/')
+            
         }
         const d = new Date();
         var year = d.getFullYear();

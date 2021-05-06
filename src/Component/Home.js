@@ -25,7 +25,6 @@ const Home =()=>{
         cardName = name;
         let priviousName = volatile?.priviousName;
         let isActiveCard = volatile?.isActiveCard;
-        debugger
         if(priviousName === name){
             isActiveCard = !isActiveCard
         }
